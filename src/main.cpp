@@ -70,7 +70,7 @@ void process_queries(const char* filename)
 
 int main(void) 
 {
-	load_definitions("definitions.txt");
-	process_queries("queries.txt");
+	load_definitions("../definitions.txt");
+	process_queries("../queries.txt");
 	return EXIT_SUCCESS;
 }
