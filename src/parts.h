@@ -14,9 +14,13 @@ class Part
 {
 public:
     string name;
+    map<Part*,int> subparts;
     Part(string const &n) : name(n) {};
     void describe(void);
     int count_howmany(Part const *p);
+
+private:
+    int countRecursion(Part* now, Part const *p);
 };
 
 //**************** NameContainer ****************
